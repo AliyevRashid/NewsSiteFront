@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>R_News</title>
+</head>
+
+<body>
+    <header>
+        <h1>R_News</h1>
+        <button id="loginButton" class="loginButton">Login</button>
+        <button id="registerButton" class="registerButton">Register</button>
+
+    </header>
+    
+    <nav>
+        <a href="#Index">Главная</a>
+        <!-- <a href="#">Новости</a> -->
+        <a href="#">Обзоры</a>
+        <a href="#">Технологии</a>
+        <a href="#">Контакты</a>
+    </nav>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()" style="color: red;">&times;</span>
+            <h2>Login</h2>
+            <form>
+   
+                <label for="login">Login:</label>
+                
+                <div>
+                    <input type="text" id="login" name="login" placeholder="Enter your login">
+                </div>
+
+                <label for="password">Password:</label>
+                
+                <div>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+
+                <button type="button" class="loginButton" onclick="submitLogin()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegisterModal()" style="color: red;">&times;</span>
+            <h2>Register</h2>
+            <form>
+                <label for="name">Name:</label>
+
+                <div>
+                   <input type="text" id="login" name="login" placeholder="Enter your name">
+                </div>
+                <label for="login">Login:</label>
+
+                <div>
+                   <input type="text" id="login" name="login" placeholder="Enter your login">
+                </div>
+                <label for="password">Password:</label>
+
+                <div>
+                   <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <label for="text">Email:</label>
+
+                <div>
+                   <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+
+                <button type="button" class="loginButton" onclick="submitLogin()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <section>
+        <div class="animated-border" onmouseover="startAnimation()" onmouseout="stopAnimation()">
+            <a href="Detail.html">
+                <h2>Новость 1</h2>
+            </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus
+                ante dapibus diam.
+            </p>
+        </div>
+
+        <div class="animated-border" onmouseover="startAnimation()" onmouseout="stopAnimation()">
+            <a href="Detail.html">
+                <h2>Новость 2</h2>
+            </a>
+            <p>Etiam quis quam. Integer lacinia. Nulla est. Nulla turpis magna, cursus sit amet, suscipit a, interdum id,
+                felis.
+            </p>
+        </div>
+
+        <div class="animated-border" onmouseover="startAnimation()" onmouseout="stopAnimation()">
+            <a href="Detail.html">
+                <h2>Новость 3</h2>
+            </a>
+            <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+
+        <div class="animated-border" onmouseover="startAnimation()" onmouseout="stopAnimation()">
+            <a href="Detail.html">
+                <h2>Новость 4</h2>
+            </a>
+            <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+
+        <div class="animated-border" onmouseover="startAnimation()" onmouseout="stopAnimation()">
+            <a href="Detail.html">
+                <h2>Новость 5</h2>
+            </a>
+            <p>lorem ipsum dolor sit amet</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Техно Новости. Все права защищены.</p>
+    </footer>
+
+    <script src="IndexScript.js"></script>
+</body>
+
+</html>

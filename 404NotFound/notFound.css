@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.cyber-animation {
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    border: 2px solid #0be3e3; /* Цвет анимации (вы можете изменить) */
+    border-radius: 50%;
+    animation: pulseAnimation 1s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:3px 3px 3px 3px #0be3e3;
+}
+
+.content {
+    z-index: 2;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+@keyframes pulseAnimation {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+}
