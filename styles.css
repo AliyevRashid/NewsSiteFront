@@ -66,20 +66,22 @@ section {
 
 
 div.animated-border {
-    width: 100%;
+    width: 70%;
     height: 200px;
-    background: linear-gradient(to right, #050505, #0e0e0e);
-    border: 2px solid #0be3e3;
+    background: linear-gradient(to right, #050505 95%, #050505);
+    border: 3px solid #0be3e3;
     border-radius: 30px;
+    box-shadow: #0be3e3 10px 10px 80px 5px;
     position: relative;
     overflow: hidden;
-    margin: 20px;
+    margin: 20px 13% 20px 15%;
+    padding: 1%;
     transition: border-color 0.3s;
 }
 
 div.animated-border:hover {
     border-color: #ffa50f;
-    box-shadow: 5px 5px 10px #ffa50f;
+    box-shadow: 20px 20px 80px 0px #ffa50f;
 }
 
 div.border-animation {
@@ -93,11 +95,14 @@ div.border-animation {
 article {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #0be3e3;
+    border-bottom: 2px solid #ffa50f;
+    border-radius: 30px;
+    box-shadow: #ffa50f 0px 0px 28px 5px;
+    padding:15px;
 }
 
 article h2 {
-    color: #0e0e0e;
+    color: #0be3e3;
 }
 
 article p {
@@ -109,29 +114,6 @@ footer {
     padding: 20px;
     text-align: center;
     z-index: 1;
-}
-
-@keyframes borderAnimation {
-    0% {
-        width: 0;
-        left: 0;
-    }
-    25% {
-        width: 100%;
-        left: 0;
-    }
-    50% {
-        width: 100%;
-        left: 100%;
-    }
-    75% {
-        width: 0;
-        left: 100%;
-    }
-    100% {
-        width: 0;
-        left: 0;
-    }
 }
 
 .modal {

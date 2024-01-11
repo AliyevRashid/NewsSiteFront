@@ -13,16 +13,17 @@ header {
     padding: 20px;
     text-align: center;
     z-index: 1;
+    box-shadow: 0px 0px 45px 5px #0be3e3;
 }
 
 section.user-details {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 4% auto;
     padding: 20px;
     background: #0e0e0e;
     border: 1px solid #0be3e3;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px 5px #0be3e3;
+    box-shadow: 0px 0px 45px 15px #0be3e3;
 }
 
 .detail-item {
@@ -49,11 +50,14 @@ span {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
-    box-shadow: 3px 3px 3px 3px #0be3e3;
+    box-shadow: 3px 3px 1rem 1px #0be3e3;
 }
-
+#news-list li:hover{
+    border: 2px solid #ffa50f;
+    box-shadow: 3px 3px 1rem 1px #ffa50f;
+}
 #news-list h3 {
-    color: #0be3e3;
+    color: #ffa50f;
 }
 
 #news-list p {

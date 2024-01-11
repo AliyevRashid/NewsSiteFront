@@ -4,22 +4,7 @@ const modal = document.getElementById('myModal');
 const registerModal = document.getElementById('registerModal')
 const loginInput = document.getElementById('login');
 const passwordInput = document.getElementById('password');
-// var inputElements = document.querySelectorAll('input');
-
-// // Перебираем каждый элемент input
-// inputElements.forEach(function(input) {
-//     // Добавляем обработчик события при фокусировке (клике) на инпуте
-//     input.addEventListener('focus', function() {
-//         // Устанавливаем оранжевый цвет границы при фокусировке
-//         this.style.borderColor = '#ffa500';
-//     });
-
-//     // Добавляем обработчик события при потере фокуса (покидании инпута)
-//     input.addEventListener('blur', function() {
-//         // Возвращаем стандартный цвет границы при потере фокуса
-//         this.style.borderColor = '';
-//     });
-// });
+sessionStorage.setItem('pageNumber',0);
 
 loginButton.addEventListener('click', openModal);
 registerButton.addEventListener('click',openRegisterModal)
@@ -57,8 +42,10 @@ function closeRegisterModal() {
 }
 
 
+
 // Close the modal if the user clicks outside of it
 window.addEventListener('click', (event) => {
+    
     if (event.target === modal) {
         closeModal();
     }
