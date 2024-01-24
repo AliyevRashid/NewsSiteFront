@@ -69,7 +69,7 @@ div.animated-border {
     width: 70%;
     height: 200px;
     background: linear-gradient(to right, #050505 95%, #050505);
-    border: 3px solid #0be3e3;
+    border: 0.3rem solid #0be3e3;
     border-radius: 30px;
     box-shadow: #0be3e3 10px 10px 80px 5px;
     position: relative;
@@ -82,6 +82,7 @@ div.animated-border {
 div.animated-border:hover {
     border-color: #ffa50f;
     box-shadow: 20px 20px 80px 0px #ffa50f;
+    animation: color-round 3s cubic-bezier(0.25, 0.5, 0.75, 1) infinite; 
 }
 
 div.border-animation {
@@ -89,7 +90,6 @@ div.border-animation {
     width: 0;
     height: 100%;
     background-color: #0be3e3;
-    animation: borderAnimation 2s infinite;
 }
 
 article {
@@ -138,7 +138,9 @@ footer {
 
 #login
 {
-     margin:3%;
+    height: 3%;
+    width: 60%;
+    margin:3rem;
     background-color: rgba(0, 0, 0, 0.5);
     border: 3px solid #0be3e3;
     color: #0be3e3;
@@ -150,7 +152,9 @@ footer {
 }
 #password
 {
-    margin:3%;
+    height: 10%;
+    width: 60%;
+    margin:3rem;
     background-color: rgba(0, 0, 0, 0.5);
     border: 3px solid #0be3e3;
     color: #0be3e3;
@@ -162,6 +166,8 @@ footer {
 }
 
 #email{
+    height: 3%;
+    width: 60%;
     margin:3%;
     background-color: rgba(0, 0, 0, 0.5);
     border: 3px solid #0be3e3;
@@ -202,7 +208,7 @@ footer {
     border: 2px solid #ffa50f;
     color:#ffa50f;
     background-color: rgba(0, 0, 0, 0.5); 
-    margin-top: 3.5%;
+    margin: 3.5% 1.5% 3.5% 0.5%;
     width: 80px;
     cursor:pointer;
 }
@@ -214,4 +220,41 @@ footer {
     margin-top: 3.5%;
     width: 80px;
     cursor:pointer;
+}
+
+
+@keyframes color-round{
+    0%{
+        border-top:0.3rem #ffa50f solid;
+        border-right:0.3rem transparent solid;
+        border-bottom:0.3rem transparent solid;
+        border-left:0.3rem transparent solid;
+    }
+    25%
+    {
+        border-top:0.3rem #ffa50f solid;
+        border-right:0.3rem #ffa50f solid;
+        border-bottom:0.3rem transparent solid;
+        border-left:0.3rem transparent solid;
+    }
+    50%
+    {
+        border-top:3px #ffa50f solid;
+        border-right:0.3rem #ffa50f solid;
+        border-bottom:0.3rem #ffa50f solid;
+        border-left:0.3rem transparent solid;
+    }
+    75%{
+        border-top:0.3rem #ffa50f solid;
+        border-right:0.3rem #ffa50f solid;
+        border-bottom:0.3rem #ffa50f solid;
+        border-left:0.3rem #ffa50f solid;
+    }
+    100%{
+        border-top:0.3rem #ffa50f solid;
+        border-right:0.3rem #ffa50f solid;
+        border-bottom:0.3rem #ffa50f solid;
+        border-left:0.3rem #ffa50f solid;
+    }
+    
 }

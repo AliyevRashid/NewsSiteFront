@@ -17,12 +17,19 @@
     </header>
     
     <nav>
-        <a href="#Index">Главная</a>
+        <a href="Index.html">Главная</a>
         <!-- <a href="#">Новости</a> -->
         <a href="#">Обзоры</a>
         <a href="#">Технологии</a>
         <a href="#">Контакты</a>
     </nav>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()" style="color: red;">&times;</span>
+            <p>Email: aliyev.rashid2000@gmail.com</p> 
+        </div>
+    </div>
 
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -73,7 +80,7 @@
                    <input type="email" id="email" name="email" placeholder="Enter your email">
                 </div>
 
-                <button type="button" class="loginButton" onclick="submitLogin()">Login</button>
+                <button type="button" class="loginButton" onclick="submitLogin()">Register</button>
             </form>
         </div>
     </div>

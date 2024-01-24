@@ -1,7 +1,8 @@
 const loginButton = document.getElementById('loginButton');
 const registerButton = document.getElementById('registerButton');
 const modal = document.getElementById('myModal');
-const registerModal = document.getElementById('registerModal')
+const contactModal = document.getElementById('contactModal');
+const registerModal = document.getElementById('registerModal');
 const loginInput = document.getElementById('login');
 const passwordInput = document.getElementById('password');
 sessionStorage.setItem('pageNumber',0);
@@ -9,6 +10,19 @@ sessionStorage.setItem('pageNumber',0);
 loginButton.addEventListener('click', openModal);
 registerButton.addEventListener('click',openRegisterModal)
 
+
+function openContactModal()
+{
+    contactModal.display ='block';
+    contactModal.style.zIndex = 999;
+    modal.style.zIndex=0;
+    registerModal.style.zIndex=0;
+}
+
+function closeContactModal(){
+    contactModal.style.display = 'none'
+    contactModal.style.zIndex=0;
+}
 function openModal() {
     modal.style.display = 'block';
     modal.style.zIndex=999;
